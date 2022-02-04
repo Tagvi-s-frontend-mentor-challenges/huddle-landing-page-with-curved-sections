@@ -1,0 +1,26 @@
+@use "variables.scss" as *;
+@use "breakpoints.scss" as bp;
+@mixin button-pink {
+  background: $pink;
+  color: white;
+  border-radius: 30px;
+  padding: 15px 60px;
+  border: none;
+  font-weight: 600;
+  box-shadow: 3px 1px 10px 1px rgba(0, 0, 0, 20%);
+}
+@mixin md {
+  @media screen and (min-width: bp.$screen-md) {
+    @content;
+  }
+}
+@mixin lg {
+  @media screen and (min-width: bp.$screen-lg) {
+    @content;
+  }
+}
+@mixin xl {
+  @media screen and (min-width: bp.$screen-xl) {
+    @content;
+  }
+}

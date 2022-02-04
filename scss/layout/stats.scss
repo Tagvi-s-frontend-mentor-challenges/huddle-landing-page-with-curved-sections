@@ -1,0 +1,26 @@
+@use "../variables.scss" as *;
+@use "../mixins.scss" as *;
+.stats {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: $section-padding;
+  max-width: 1000px;
+  text-align: center;
+  h1,
+  h2 {
+    font-size: 4rem;
+  }
+  p {
+    color: grey;
+  }
+  img {
+    display: block;
+  }
+  @include md {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto 100px;
+  }
+}

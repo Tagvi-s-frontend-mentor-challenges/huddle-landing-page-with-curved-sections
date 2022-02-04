@@ -1,0 +1,25 @@
+@use "../mixins.scss" as *;
+@use "../variables.scss" as *;
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  padding: $section-padding;
+  text-align: center;
+  h1 {
+    font-size: 2.5rem;
+  }
+  button {
+    @include button-pink();
+    margin-bottom: 100px;
+  }
+  p {
+    margin: 30px 0;
+    max-width: 50ch;
+  }
+  img {
+    width: 100%;
+    max-width: 1000px;
+  }
+}

@@ -1,0 +1,15 @@
+@use "../variables.scss" as *;
+nav {
+  width: 100%;
+  padding: 3vw;
+  display: flex;
+  justify-content: space-between;
+  button {
+    border: 1px solid $pink;
+    background: transparent;
+    color: $pink;
+    font-family: $font;
+    padding: 10px 30px;
+    border-radius: 30px;
+  }
+}
