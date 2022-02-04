@@ -27,10 +27,14 @@ footer .main button {
   border: none;
   font-weight: 600;
   box-shadow: 3px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
   border-radius: 10px;
   display: block;
   margin-top: 15px;
   margin-left: auto;
+}
+footer .main button:hover {
+  opacity: 80%;
 }
 footer .main .logo {
   margin-top: 100px;
@@ -46,6 +50,10 @@ footer .main .info .flex {
 footer .main .social-links {
   margin-top: 20px;
   font-size: 2rem;
+  cursor: pointer;
+}
+footer .main .social-links *:hover {
+  color: #ff52bf;
 }
 @media screen and (min-width: 992px) {
   footer .main {
@@ -79,6 +87,9 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+nav img {
+  cursor: pointer;
+}
 nav button {
   border: 1px solid #ff52bf;
   background: transparent;
@@ -86,6 +97,10 @@ nav button {
   font-family: "Open Sans", sans-serif;
   padding: 10px 30px;
   border-radius: 30px;
+  cursor: pointer;
+}
+nav button:hover {
+  opacity: 50%;
 }
 
 header {
@@ -95,6 +110,7 @@ header {
   margin-top: 100px;
   padding: 30px;
   text-align: center;
+  animation: fade 1s linear;
 }
 header h1 {
   font-size: 2.5rem;
@@ -107,7 +123,11 @@ header button {
   border: none;
   font-weight: 600;
   box-shadow: 3px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
   margin-bottom: 100px;
+}
+header button:hover {
+  opacity: 80%;
 }
 header p {
   margin: 30px 0;
@@ -118,6 +138,16 @@ header img {
   max-width: 1000px;
 }
 
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 .stats {
   display: flex;
   align-items: center;
@@ -201,6 +231,10 @@ header img {
   border: none;
   font-weight: 600;
   box-shadow: 3px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.get-started button:hover {
+  opacity: 80%;
 }
 @media screen and (min-width: 992px) {
   .get-started {

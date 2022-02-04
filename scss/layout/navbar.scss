@@ -4,6 +4,9 @@ nav {
   padding: 3vw;
   display: flex;
   justify-content: space-between;
+  img {
+    cursor: pointer;
+  }
   button {
     border: 1px solid $pink;
     background: transparent;
@@ -11,5 +14,9 @@ nav {
     font-family: $font;
     padding: 10px 30px;
     border-radius: 30px;
+    cursor: pointer;
+    &:hover {
+      opacity: 50%;
+    }
   }
 }

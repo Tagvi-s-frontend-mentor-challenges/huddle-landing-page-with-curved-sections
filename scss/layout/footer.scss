@@ -43,6 +43,10 @@ footer {
     .social-links {
       margin-top: 20px;
       font-size: 2rem;
+      cursor: pointer;
+      *:hover {
+        color: $pink;
+      }
     }
     @include lg {
       padding: 7vh 10vw;
